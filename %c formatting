@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main()
+{
+      char alx_sch = 'a'
+      scanf("%c\n", alx_sch);
+      return (0);
+      
+}
