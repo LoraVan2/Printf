@@ -1,5 +1,13 @@
 #include "main.h"
-
+/**
+ * _printf - produces outputs according to a format
+ *@case'c': format that prints Characters
+ *@case's': format that prints a string
+ *@case'%': format that pints percentage
+ *@case'd': format thaat prints a decimal
+ *@case'i': format that prints intigers
+ *Return: the specified value to the calling function
+ */
 void _printf(char *format, ...)
 {
     va_list args;
