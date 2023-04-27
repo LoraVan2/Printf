@@ -1,7 +1,7 @@
 #ifndef FUNC_H
 #define FUNC_H
 
-/* Header Declrearation */
+/* prototypes to be used in printing in printf program */
 #include <stdarg.h>
 #include <stdio.h>
 #include <unistd.h>
@@ -19,10 +19,17 @@ typedef struct _operation
 	int (*func)(int argument);
 } _op;
 
-/* Main Function */
+/* function prints strings */
 int _printf(char *fmt, ...);
 
-/* Type function */
+/**
+ * print_char - prints characters
+ * print_int - prints integers
+ * print_string - prints string of characters
+ * print_binary - prints decimals
+ * print_hexa - prints a number in hexadecimal
+ * print_octal - prints octal numbers
+ */
 int print_char(va_list);
 int print_int(va_list);
 int print_string(va_list);
