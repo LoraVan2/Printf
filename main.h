@@ -19,7 +19,7 @@ typedef struct _operation
 	int (*func)(int argument);
 } _op;
 
-/* function prints strings */
+/* function prints formatted txt */
 int _printf(char *fmt, ...);
 
 /**
@@ -27,8 +27,9 @@ int _printf(char *fmt, ...);
  * print_int - prints integers
  * print_string - prints string of characters
  * print_binary - prints decimals
- * print_hexa - prints a number in hexadecimal
+ * print_hexa - convert decimal to hexadecimal
  * print_octal - prints octal numbers
+ * get_opt - function to get operations
  */
 int print_char(va_list);
 int print_int(va_list);
